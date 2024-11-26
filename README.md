@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Clash Dashboard: Comprehensive Analytics for Clash of Clans and Clash Royale
 
-## Getting Started
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Data Available](#data-available)
+4. [Technical Details](#technical-details)
+5. [Usage Guide](#usage-guide)
+6. [API Limitations](#api-limitations)
+7. [Future Enhancements](#future-enhancements)
 
-First, run the development server:
+## Introduction
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Clash Dashboard is a powerful web application that provides in-depth analytics and insights for both Clash of Clans and Clash Royale. This tool is designed for players, clan leaders, and enthusiasts who want to dive deep into game statistics, track progress, and analyze performance across various aspects of these popular Supercell games.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### General Features
+- Responsive design for seamless use on desktop and mobile devices
+- Dark mode support for comfortable viewing in low-light environments
+- Fast and efficient data loading with React Query
+- User-friendly interface with intuitive navigation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Clash of Clans Features
+1. **Player Analytics**
+   - Detailed player statistics including trophies, war stars, and attack/defense wins
+   - Visualization of troop, hero, and spell levels
+   - Comparison of current levels to maximum levels
+   - Town Hall level and experience level display
 
-## Learn More
+2. **Clan Information**
+   - Comprehensive clan details including type, location, and level
+   - War frequency and performance statistics
+   - Member list with individual contributions
+   - Clan points and versus points tracking
 
-To learn more about Next.js, take a look at the following resources:
+3. **War Analysis**
+   - War log data with win/loss statistics
+   - Detailed breakdown of individual war performance
+   - Trends in war participation and success rates
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Clash Royale Features
+1. **Player Analytics**
+   - Player statistics including trophies, wins, and losses
+   - Current deck analysis and card levels
+   - Battle log data and performance trends
+   - Achievement tracking and clan card collection
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Clan Information**
+   - Clan details including type, location, and required trophies
+   - Member list with donation statistics
+   - Clan war trophies and war log data
+   - Clan chest and donation tracking
 
-## Deploy on Vercel
+3. **War Analysis**
+   - River race log data and performance
+   - Individual member contributions in clan wars
+   - War day wins and collection day battle statistics
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Tournament Tracking**
+   - Search and display of ongoing tournaments
+   - Tournament details including capacity, status, and duration
+   - Participant list and rankings
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Data Available
+
+### Clash of Clans Data
+- Player data: name, tag, town hall level, experience, trophies, achievements, troops, spells, heroes
+- Clan data: name, tag, description, type, location, war frequency, clan level, war league, war wins/losses
+- War log: opponent details, result, destruction percentage, stars gained
+
+### Clash Royale Data
+- Player data: name, tag, trophies, arena, clan, cards, current deck, battle log
+- Clan data: name, tag, description, type, score, war trophies, member list, donation stats
+- War log: season details, participants, final battle stats
+- Tournament data: name, status, capacity, duration, player list, bracket information
+
+## Technical Details
+- Built with Next.js 13 using the App Router
+- Uses React Query for efficient data fetching and caching
+- Styled with Tailwind CSS for responsive design
+- Utilizes shadcn/ui components for consistent UI elements
+- Integrates with official Supercell APIs for real-time data
+- Implements server-side rendering for improved performance and SEO
+
+## Usage Guide
+1. **Home Page**: Select either Clash of Clans or Clash Royale dashboard
+2. **Player Search**: Enter a player tag to view detailed player statistics
+3. **Clan Search**: Enter a clan tag to view clan information and member details
+4. **War Analysis**: Access war logs and performance data for clans
+5. **Tournaments** (Clash Royale only): Search for active tournaments and view details
+
+## API Limitations
+- Data is subject to Supercell's API rate limits and update frequencies
+- Some data may not be available for players or clans with privacy settings enabled
+- API keys are required for accessing Supercell's data and must be kept secure
+
+## Future Enhancements
+- Integration with more Supercell games (e.g., Brawl Stars)
+- Advanced analytics and machine learning predictions for player and clan performance
+- Social features for sharing and comparing stats
+- Custom alerts and notifications for significant game events or milestones
+
+---
+
+This project is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. For more information see Supercell's Fan Content Policy: www.supercell.com/fan-content-policy.
+
